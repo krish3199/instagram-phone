@@ -2,15 +2,18 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    background-color: black;
     /* background-color: black; */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 .nav{
-    height: 70px;
+    height: 60px;
     width: 100%;
     background-color:rgb(13,16,22);
     display: flex;
     justify-content: space-between;
-    padding-inline: 10px;
+    padding-inline: 8px;
+    /* border-bottom: 1px solid white; */
 }
 .left{
     display: flex;
@@ -34,7 +37,7 @@
     font-size: 28px;
 }
 .main{
-    /* margin-top: 5%; */
+    /* margin-top: 1px; */
     height: 15vh;
     /* max-height: 150px; */
     display: flex;
@@ -44,6 +47,8 @@
     background-color:rgb(13,16,22);
     /* align-items: center; */
     overflow-y: hidden;
+   border-bottom: 1px solid rgb(66, 64, 64);
+
 }
 /* .main::-webkit-scrollbar{
     width: 0;
@@ -69,6 +74,232 @@
     width: 100%;
     /* border-radius: 50%; */
 }
+.post1{
+    height: 90vh;
+    width: 100%;
+    /* background-color: red; */
+}
+.yuu{
+    height: 70px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    background-color: black;
+    padding-inline: 10px;
+}
+.yuu1{
+    height: 70px;
+    width: 57%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: white;
+}
+.yuu1 img{
+    width: 20%;
+    position: relative;
+    right: 10px;
+}
+.yuu1 p{
+    color: white;
+    font-size: 14px;
+    font-weight: 600;
+}
+#krish{
+    width: 7%;
+    margin-left: 15px;
+    margin-top: 3px;
+}
+.yuu1 span{
+    font-size: 14px;
+    color: gray;
+    font-weight: 500;
+}
+.yuu2{
+    height: 70px;
+    width: 10%;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+}
+.yuu2 i{
+    font-size: 20px;
+    color: white;
+}
+.sliderss{
+    height: auto;
+    width: 100%;
+}
+
+.slider-wrapper {
+	position: relative;
+}
+
+.slider {
+	--slide-width: clamp(490px, 75vw, 800px);
+	--slide-height: clamp(240px, 75vh, 600px);
+
+	display: grid;
+	grid-auto-flow: column;
+	scroll-snap-type: x mandatory;
+	max-width: var(--slide-width);
+	/* border: 5px solid #fff; */
+	box-shadow: 0 2px 15px rgba(#000, 0.2), 0 2px 20px rgba(#000, 0.25);
+	overflow-y: hidden;
+	overflow-x: auto;
+	scroll-behavior: smooth;
+	-ms-overflow-style: none;
+	scrollbar-width: none;
+    object-fit: cover;
+
+
+        &::-webkit-scrollbar {
+            display: none;
+        }
+}
+
+.slide {
+    height: 60vh;
+    width: 500px;
+	scroll-snap-align: start;
+    border-radius: 5px;
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+    object-fit: cover;
+}
+
+
+
+.dots {
+	position: absolute;
+	bottom: 20px;
+	left: 50%;
+	transform: translateX(-50%);
+	gap: 15px;
+	z-index: 1;
+
+	display: flex;
+	align-items: center;
+	justify-content: center;
+
+	
+}       
+
+.caption {
+	display: block;
+	margin-top: 25px;
+	color: #999;
+	letter-spacing: 0.5px;
+}
+
+.like{
+    height: 50px;
+    width: 100%;
+    /* background-color: rgb(21, 8, 8);    */
+    display: flex;
+    justify-content: space-between;
+    padding-inline: 5px;
+}
+.like1{
+    height: 50px;
+    width: 30%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    /* background-color: aqua; */
+    padding-left: 5px;
+}
+#color{
+    color: white;
+}
+
+#color:hover{
+    color: red;
+}
+.like1 i{
+    font-size: 25px;
+    color: white;
+}
+.like1 i:hover{
+    font-size: 25px;
+    color: gray;
+}
+.like2 {
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    color: white;
+}
+.like2 i{
+    font-size: 25px;
+}
+.count1 p{
+    color: white;
+    padding-left: 8px;
+    font-size: 14px;
+}
+.count1 span{
+    color: gray;
+}
+
+.heart-container {
+  --heart-color: rgb(248, 245, 245);
+  position: relative;
+  width: 25px;
+  height: 25px;
+  transition: .3s;
+}
+
+.heart-container .checkbox {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  z-index: 20;
+  cursor: pointer;
+  border: 1px solid black;
+
+}
+
+.heart-container .svg-container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.heart-container .svg-outline,
+        .heart-container .svg-filled {
+  fill: var(--heart-color);
+  position: absolute;
+}
+
+.heart-container .svg-filled {
+  animation: keyframes-svg-filled 1s;
+  display: none;
+}
+
+.heart-container .svg-celebrate {
+  position: absolute;
+  animation: keyframes-svg-celebrate .5s;
+  animation-fill-mode: forwards;
+  display: none;
+  stroke: var(--he      art-color);
+  fill: var(--heart-color);
+  stroke-width: 2px;
+}
+
+.heart-container .checkbox:checked~.svg-container .svg-filled {
+  display: block
+}
+
+.heart-container .checkbox:checked~.svg-container .svg-celebrate {
+  display: block
+}
+
+
 @media (min-width:430px) {
     .main{
         display: none;
