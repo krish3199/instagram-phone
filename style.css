@@ -310,12 +310,12 @@
   display: block
 }
 .insta{
-    height: 80px;
+    height: 150px;
     width: 100%;
     background-color: red;
     position: fixed;
     z-index: 1;
-    margin-top: 600px;
+    margin-top: 750px;
     /* position: relative; */
     
 }
