@@ -11,13 +11,14 @@
     scrollbar-width: none;
     gap: 15px;
     background-color: black;
+    align-items: center;
 }
 /* .main::-webkit-scrollbar{
     width: 0;
 } */
-.main1{
-   min-width: 110px;
-   height: 110px;
+.main1{ 
+   min-width:90px;
+   height: 90px;
    line-height: 110px;
    text-align: center;
    background-color: rgb(93, 15, 15);
