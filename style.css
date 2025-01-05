@@ -84,7 +84,7 @@
     /* border-radius: 50%; */
 }
 .post1{
-    height: 90vh;
+    height: auto;
     width: 100%;
     z-index: -1;
     /* background-color: red; */
@@ -312,12 +312,30 @@
 .insta{
     height: 150px;
     width: 100%;
-    background-color: red;
+    background-color: black;
     position: fixed;
     z-index: 1;
     margin-top: 750px;
     /* position: relative; */
-    
+    border-top: 1px solid white;
+}
+.insta1{
+    height: 60px;
+    width: 100%;
+    background-color: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-inline: 20px;
+}
+.insta1 i{
+    font-size: 28px;
+    color: white;
+    background-color: transparent;
+}
+.insta img{
+    width: 9%;
+    border-radius: 50%;
 }
 
 
