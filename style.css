@@ -18,11 +18,15 @@
 .left{
     display: flex;
     align-items: center;
+    background-color:rgb(13,16,22);
+
 }
 .left img{
+    background-color:rgb(13,16,22);
     width: 120px;
 }
 .left i{
+    background-color:rgb(13,16,22);
     color: white;
     margin-top: 5px;
     font-size: 18px;
@@ -30,11 +34,15 @@
 .right {
     display: flex;
     align-items: center;
-    gap: 15px;
+    gap: 20px;
+    background-color:rgb(13,16,22);
+    
 }
 .right i{
     color: white;
-    font-size: 28px;
+    font-size: 26px;
+    background-color:rgb(13,16,22);
+
 }
 .main{
     /* margin-top: 1px; */
@@ -54,6 +62,7 @@
     width: 0;
 } */        
 .main1{ 
+    background-color:rgb(13,16,22);
    min-width:90px;
    /* height: 90px; */
    line-height: 110px;
@@ -77,6 +86,7 @@
 .post1{
     height: 90vh;
     width: 100%;
+    z-index: -1;
     /* background-color: red; */
 }
 .yuu{
@@ -241,6 +251,7 @@
 }
 .count1 span{
     color: gray;
+    font-size: 12px;
 }
 
 .heart-container {
@@ -298,10 +309,26 @@
 .heart-container .checkbox:checked~.svg-container .svg-celebrate {
   display: block
 }
+.insta{
+    height: 80px;
+    width: 100%;
+    background-color: red;
+    position: fixed;
+    z-index: 1;
+    margin-top: 800px;
+    /* position: relative; */
+    
+}
 
 
 @media (min-width:430px) {
     .main{
+        display: none;
+    }
+    .nav{
+        display: none;
+    }
+    .post1{
         display: none;
     }
 }
