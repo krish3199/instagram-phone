@@ -4,11 +4,13 @@
     box-sizing: border-box;
 }
 .main{
-    max-height: 120px;
+    height: 20vh;
+    /* max-height: 150px; */
     display: flex;
     overflow-x: scroll;
     scrollbar-width: none;
     gap: 15px;
+    background-color: black;
 }
 /* .main::-webkit-scrollbar{
     width: 0;
@@ -21,6 +23,13 @@
    background-color: rgb(93, 15, 15);
    margin-right: 2px;
    border-radius: 50%;
+}
+.main1 h6{
+    color: white;
+    /* border: 1px solid red; */
+    position: relative;
+    bottom: 80px;
+    font-size: 18px;
 }
 .main1 img{
     width: 100%;
